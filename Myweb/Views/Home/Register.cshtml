@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "My WebApplication";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>
+  <br>
+
+</p>
+<form action="/Home/Validate">
+  <fieldset>
+    <legend>Registration Form</legend>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Name</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder=" " required>
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Email</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="abc@gmail.com" required>
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Password</label>
+      <input type="password" id="disabledTextInput" class="form-control" placeholder=" " required>
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
